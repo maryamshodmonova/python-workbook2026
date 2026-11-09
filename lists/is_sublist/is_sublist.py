@@ -1,0 +1,15 @@
+def is_sublist(main_list: list, sub: list) -> bool:
+    if len(sub) == 0:
+        return True
+
+    for i in range(len(main_list) - len(sub) + 1):
+        if main_list[i:i + len(sub)] == sub:
+            return True
+
+    return False
+
+
+if __name__ == "__main__":
+    print(is_sublist([2, 3, 5, 7, 11], [3, 5, 7]))  
+    print(is_sublist([2, 3, 5, 7, 11], [3, 7]))  
+    print(is_sublist([2, 3, 5], []))  

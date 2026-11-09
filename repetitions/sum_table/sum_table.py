@@ -1,4 +1,4 @@
-for row in range(10):
-    for column in range(10):
-        print(row + column, end=" ")
-    print()
+for i in range(10): 
+    for j in range (i):
+        print(i+j, end = " ")
+    print ()
